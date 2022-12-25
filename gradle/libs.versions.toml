@@ -1,0 +1,24 @@
+# This is a Gradle version catalog, for more information, see
+# https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog
+
+[versions]
+# Declare shared version aliases here, e.g:
+# hello = "4.2.0"
+#
+# You can reference these versions inside your `build.gradle.kts`:
+# `val helloVersion = libs.versions.hello.get()`
+
+[libraries]
+# Declare shared dependency coordinates here, e.g:
+# greetings-hello = { module = "com.example:hello", version.ref = "hello" }
+#
+# You can also use 'inline' versions instead of references
+# greetings-generic = { module = "com.example:greeting", version = "0.6.9" }
+#
+# Use these libraries in your `build.gradle.kts` file like:
+# `implementation(libs.greetings.hello)`
+
+[bundles]
+# Use bundles to group related dependencies
+# greetings = ["greetings-hello", "greeting-generic"]
+# `implementation(libs.bundles.greetings)`
