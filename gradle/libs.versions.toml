@@ -22,3 +22,13 @@
 # Use bundles to group related dependencies
 # greetings = ["greetings-hello", "greeting-generic"]
 # `implementation(libs.bundles.greetings)`
+
+[plugins]
+# Use plugin aliases to share plugin versions between subprojects:
+# kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "1.7.22" }
+#
+# Then in your `build.gradle.kts` file:
+# plugins {
+#   alias(libs.plugins.kotlin.jvm)
+# }
+kotlin = { id = "org.jetbrains.kotlin.jvm", version = "1.7.22" }

@@ -1,30 +1,27 @@
-@file:Suppress("UnstableApiUsage", "LocalVariableName")
+@file: Suppress("UnstableApiUsage", "LocalVariableName")
 
 import org.gradle.api.initialization.resolve.RepositoriesMode.FAIL_ON_PROJECT_REPOS
 
 // Basic configuration
 rootProject.name = "kotlin-project-template"
 
-// Project-level plugins
 pluginManagement {
+    // Plugins will be fetched from these repositories
     repositories {
         gradlePluginPortal()
         mavenCentral()
         google()
     }
-
-    plugins {
-        kotlin("jvm") version "1.7.22"
-    }
 }
 
-// Centralized dependency management
 dependencyResolutionManagement {
-    repositoriesMode.set(FAIL_ON_PROJECT_REPOS)
-
+    // Dependencies will be sourced from these repositories
     repositories {
         mavenLocal()
         mavenCentral()
         google()
     }
+
+    // Don't allow projects to declare their own sources
+    repositoriesMode.set(FAIL_ON_PROJECT_REPOS)
 }

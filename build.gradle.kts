@@ -1,7 +1,7 @@
 plugins {
-    // Apply the Kotlin JVM plugin, versions
-    // are defined in `settings.gradle.kts`
-    kotlin("jvm")
+    // Apply the Kotlin JVM plugin, ids and versions
+    // are defined in `gradle/libs.versions.toml`
+    alias(libs.plugins.kotlin)
 
     // Apply the Gradle Application plugin
     // to run and package our project
